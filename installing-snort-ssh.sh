@@ -212,11 +212,12 @@ sudo ./splunk add monitor /var/log/syslog
 sudo ./splunk add monitor /var/log/snort/
 sudo ./splunk add monitor /var/log/auth.log
 sudo ./splunk add monitor /var/log/dmesg
-#waiting to test out when LAMP server is installed
-#sudo ./splunk add monitor /var/log/mysql.err
-#sudo ./splunk add monitor /var/log/mysql.log
-#sudo ./splunk add monitor /var/log/apache2/error.log
-#sudo ./splunk add monitor /var/log/apache2/acess.log
+sudo ./splunk add monitor /var/log/mysql.err
+sudo ./splunk add monitor /var/log/mysql.log
+sudo ./splunk add monitor /var/log/mysql/error.log
+sudo ./splunk add monitor /var/log/apache2/error.log
+sudo ./splunk add monitor /var/log/apache2/acess.log
+sudo ./splunk add monitor /var/log/apache2/other_vhosts_access.log
 sudo ./splunk enable boot-start
 echo $'[i] Note: Can install "Splunk for Snort" app from SplunkBase later for better alert visualization!'
 
